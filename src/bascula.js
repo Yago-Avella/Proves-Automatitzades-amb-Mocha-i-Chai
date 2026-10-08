@@ -9,7 +9,7 @@ export class Bascula {
     return this.#anotacions.length;
   }
 
-  anotarPes(pes, alcada = 1, data = new Date()) {
+  anotarPes(pes, alcada = 10, data = new Date()) {
     if (typeof pes !== 'number' || Number.isNaN(pes) || pes <= 0) {
       throw new Error('El pes ha de ser un número positiu');
     }
